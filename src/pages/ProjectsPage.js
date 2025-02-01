@@ -7,43 +7,57 @@ function ProjectsPage() {
   const topTierContent = {
     title: "TopTier",
     description:
-      "TopTier is an interactive platform designed for gaming enthusiasts to explore, catalog, rank, and review their favorite video games. The application allows users to create personal accounts, browse through a comprehensive list of video games, and contribute by adding their own ratings and reviews. The platform features JWT authentication, RESTful API's, and a MongoDB database.",
-    stack: ["React", "Node.js", "MongoDB"],
+      "An interactive platform designed for gaming enthusiasts to explore, catalog, rank, and review their favorite video games. The application allows users to create personal accounts, browse through a comprehensive list of video games, and contribute by adding their own ratings and reviews. The platform features JWT authentication, RESTful API's, and a MongoDB database.",
+    stack: ["JavaScript", "React", "Node.js", "MongoDB"],
   };
 
   const infoVentureContent = {
     title: "InfoVenture",
     description:
-      "Infoventure is an educational game developed for ShellHacks, designed to empower students from underrepresented communities by teaching essential life lessons through interactive gameplay. The game leverages the Unity platform to create an engaging and immersive experience.",
+      "An educational game developed for ShellHacks, designed to empower students from underrepresented communities by teaching essential life lessons through interactive gameplay. The game leverages the Unity platform to create an engaging and immersive experience.",
     stack: ["C#", "Unity"],
   };
 
   const distributedWebAppContent = {
     title: "C.R.U.D",
     description:
-      "C.R.U.D is a multi-tier web app that allows users to read existing records, update information, and delete records related to Olympic events. Built as a distributed system, C.R.U.D utilizes Java Servlets and the Tomcat server to handle client requests and manage data across multiple layers. The frontend of the application was developed using HTML and CSS, providing a clean and user-friendly interface. ",
+      "A multi-tier web app that allows users to read existing records, update information, and delete records related to Olympic events. Built as a distributed system, C.R.U.D utilizes Java Servlets and the Tomcat server to handle client requests and manage data across multiple layers. The frontend of the application was developed using HTML and CSS, providing a clean and user-friendly interface. ",
     stack: ["Java", "Tomcat", "HTML", "CSS"],
   };
 
   const handSignInterpreterContent = {
     title: "ASL Interpreter",
     description:
-      "The American Sign Language (ASL) Letter Interpreter is a Python-based application designed to recognize and interpret hand signs representing letters of the American Sign Language alphabet. The application captures real-time input and outputs the corresponding letter to the terminal, making it a useful tool for learning and practicing ASL.",
+      "A Python-based application designed to recognize and interpret hand signs representing letters of the American Sign Language alphabet. The application captures real-time input and outputs the corresponding letter to the terminal, making it a useful tool for learning and practicing ASL.",
     stack: ["Python", "OpenCV", "MediaPipe"],
   };
 
   const pl0CompilerContent = {
     title: "PL-0 compiler",
     description:
-      "The PL-0 Compiler is a project developed entirely in C, designed to parse, analyze, and compile code written in a novel version of the PL/0 programming language. This compiler not only checks the grammar and syntax of the PL/0 code but also generates corresponding assembly code.",
+      "A C based compiler designed to parse, analyze, and compile code written in the PL/0 programming language. This compiler checks the grammar and syntax of the PL/0 code and also generates corresponding assembly code.",
     stack: ["C"],
   };
 
-  const visualGeoLocatorContent = {
-    title: "Visual GeoLocator",
+  const visualGeolocatorContent = {
+    title: "Visual Geolocator",
     description:
-      "The Visual GeoLocator is a Python-based application that uses computer vision and 3D modeling to localize an image. The application leverages OpenGL to create a 3D model of the search space and Open Streem Map with Google Maps to extract geographical information from the image and predict the location where the it was taken.",
+      "A Python-based application that uses computer vision and 3D modeling to localize an image. The application leverages OpenGL to create a 3D model of the search space and Open Street Map with Google Maps to extract geographical information from the image and predict the location where the it was taken.",
     stack: ["Python", "OpenGL", "DracoPy"],
+  };
+
+  const LinguabilityContent = {
+    title: "Linguability",
+    description:
+      "A Chrome extension that randomly translates sentences on any webpage, helping you master new languages.",
+    stack: ["JavaScript", "Node.js"],
+  };
+
+  const NotableContent = {
+    title: "Notable",
+    description:
+      "A note-taking app that allows users to create, edit, and delete notes. The app is built using React and Node.js, and uses a MongoDB database to store the notes.",
+    stack: ["JavaScript", "Node.js", "Next.js", "MongoDB"],
   };
 
   const projectContainerStyle = {
@@ -60,6 +74,11 @@ function ProjectsPage() {
     boxSizing: "border-box",
     height: "75vh",
     borderRadius: "10px",
+    overflow: "scroll",
+    paddingLeft: "2rem",
+    paddingRight: "2rem",
+    paddingTop: "2rem",
+    paddingBottom: "10rem",
   };
 
   return (
@@ -76,11 +95,13 @@ function ProjectsPage() {
       <div style={innerBackground}>
         <div style={projectContainerStyle}>
           <ProjectCard content={topTierContent} />
-          <ProjectCard content={infoVentureContent} />
+          <ProjectCard content={visualGeolocatorContent} />
+          <ProjectCard content={LinguabilityContent} />
+          <ProjectCard content={NotableContent} />
           <ProjectCard content={distributedWebAppContent} />
+          <ProjectCard content={infoVentureContent} />
           <ProjectCard content={handSignInterpreterContent} />
           <ProjectCard content={pl0CompilerContent} />
-          <ProjectCard content={visualGeoLocatorContent} />
         </div>
       </div>
       <SocialMediaLinks />
