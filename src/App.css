@@ -1,32 +1,32 @@
 body {
-	/* background: linear-gradient(-45deg, #002e1f9f, #003e29, #002e1f9f); */
+  /* background: linear-gradient(-45deg, #002e1f9f, #003e29, #002e1f9f); */
   background: linear-gradient(-45deg, #00774f9f, #004d34, #00774f9f);
   /* background: linear-gradient(-45deg, #00a46d9f, #004d34, #00a46d9f); */
-	background-size: 400% 400%;
+  background-size: 400% 400%;
   overflow: hidden;
-	animation: gradient 15s ease infinite;
-  font-family: 'JetBrains Mono', monospace;
+  animation: gradient 15s ease infinite;
+  font-family: "JetBrains Mono", monospace;
   margin: 0;
   overflow: scroll;
   /* background-color: #003e29; */
-  background-color: #005338; 
+  background-color: #005338;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('./fonts/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+  font-family: "JetBrains Mono";
+  src: url("./fonts/ttf/JetBrainsMono-Regular.ttf") format("truetype");
 }
 
 .backgroundBox {
@@ -104,23 +104,23 @@ body {
   font-style: normal;
   font-stretch: normal;
   font-size: 5vw;
-  letter-spacing: .02em;
-  line-height: .9em;
-  transition: color .5s,opacity .5s;
+  letter-spacing: 0.02em;
+  line-height: 0.9em;
+  transition: color 0.5s, opacity 0.5s;
 }
 
 .navigation button {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   font-size: 5vw;
-  letter-spacing: .02em;
-  line-height: .9em;
-  transition: color .5s, opacity .5s;
+  letter-spacing: 0.02em;
+  line-height: 0.9em;
+  transition: color 0.5s, opacity 0.5s;
   border: none;
   background-color: transparent;
 }
@@ -156,7 +156,6 @@ body {
   text-shadow: 0px 2px 0px #a8e9ab63;
 }
 
-
 .skills {
   position: relative;
   margin: 0;
@@ -184,14 +183,14 @@ body {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   font-size: 2.5vw;
-  letter-spacing: .02em;
-  line-height: .9em;
-  transition: color .5s, opacity .5s;
+  letter-spacing: 0.02em;
+  line-height: 0.9em;
+  transition: color 0.5s, opacity 0.5s;
   border: none;
   background-color: transparent;
 }
@@ -204,14 +203,19 @@ button {
 }
 
 img:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
-header, h1, h2, img, p, button {
+header,
+h1,
+h2,
+img,
+p,
+button {
   margin: 0;
   /* color: #a0dbb9; */
   color: #a8e9ab;
-  transition: color .5s, opacity .5s;
+  transition: color 0.5s, opacity 0.5s;
   opacity: 1;
 }
 
@@ -240,11 +244,14 @@ h1 {
   list-style: none;
 }
 
-ul { padding:0; list-style: none;}
+ul {
+  padding: 0;
+  list-style: none;
+}
 
 .info-list li {
   font-size: 1.7vw;
-  margin-top: 1rem; 
+  margin-top: 1rem;
   color: #a8e9ab;
 }
 
@@ -423,8 +430,6 @@ ul { padding:0; list-style: none;}
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-
-
 .navbar {
   background-color: #004d34;
   opacity: 1;
@@ -445,7 +450,7 @@ ul { padding:0; list-style: none;}
   opacity: 1;
   display: flex;
   justify-content: space-between;
-  padding: .5vh;
+  padding: 0.5vh;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(10, 0, 0, 0.222);
   position: absolute;
